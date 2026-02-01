@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const DOG_API_BASE_URL = process.env.DOG_API_URL || 'https://dog.ceo/dog-api';
+const DOG_API_BASE_URL = process.env.DOG_API_URL || 'https://dog.ceo';
 
 class DogApiService {
   /**

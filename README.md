@@ -164,7 +164,7 @@ Environment variables:
 ```
 PORT=3001
 LLM_SERVER_URL=http://llm-server:8000
-DOG_API_URL=https://dog.ceo/dog-api
+DOG_API_URL=https://dog.ceo
 ```
 
 ### LLM Server
@@ -202,6 +202,6 @@ MIT
 
 ## Acknowledgments
 
-- Dog CEO API: https://dog.ceo/dog-api/
+- Dog CEO API: https://dog.ceo/
 - llama.cpp for efficient LLM inference
 - OpenAI for API standards
