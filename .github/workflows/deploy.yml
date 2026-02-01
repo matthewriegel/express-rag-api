@@ -74,11 +74,11 @@ jobs:
 
     - name: Build Docker images
       run: |
-        docker-compose build
+        docker compose build
 
     - name: Start services
       run: |
-        docker-compose up -d
+        docker compose up -d
         
     - name: Wait for services to be healthy
       run: |
@@ -128,16 +128,16 @@ jobs:
       if: failure()
       run: |
         echo "=== LLM Server Logs ==="
-        docker-compose logs llm-server
+        docker compose logs llm-server
         echo "=== Express API Logs ==="
-        docker-compose logs express-api
+        docker compose logs express-api
         echo "=== Next.js UI Logs ==="
-        docker-compose logs nextjs-ui
+        docker compose logs nextjs-ui
 
     - name: Stop services
       if: always()
       run: |
-        docker-compose down
+        docker compose down
 
   deploy:
     needs: test-and-build
