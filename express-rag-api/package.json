@@ -1,0 +1,33 @@
+{
+  "name": "express-rag-api",
+  "version": "1.0.0",
+  "description": "RAG API for dog information queries",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "jest",
+    "test:integration": "jest --testPathPattern=integration"
+  },
+  "keywords": [
+    "rag",
+    "express",
+    "api",
+    "llm"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "natural": "^6.10.3",
+    "compromise": "^14.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  }
+}
