@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Head from 'next/head';
 import ChatInterface from '../components/ChatInterface';
 import styles from '../styles/Home.module.css';
